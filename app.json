@@ -1,0 +1,30 @@
+{
+  "name": "xray-heroku",
+  "description": "deploy xray to Heroku.",
+  "keywords": [
+    "xray"
+  ],
+  "env": {
+    "PROTOCOL": {
+      "description": "协议vmess或vless",
+      "value": "vmess",
+      "required": true
+    },
+    "UUID": {
+      "description": "用户的主ID, uuidgenerator.net",
+      "value": "",
+      "required": false
+    },
+    "WS_PATH": {
+      "description": "websocket路径",
+      "value": "/ray",
+      "required": true
+    }
+  },
+  "website": "https://github.com/libsgh/v2ray-heroku",
+  "repository": "https://github.com/libsgh/v2ray-heroku",
+  "stack": "container",
+  "features": [
+    "runtime-dyno-metadata"
+  ]
+}
