@@ -19,7 +19,7 @@ mkdir /opt/test
 cd /opt/test
 dd if=/dev/zero of=100mb.bin bs=100M count=1
 dd if=/dev/zero of=10mb.bin bs=10M count=1
-cat /opt/privkey.pem
+cat /opt/fullchain.pem
 cat /opt/privkey.pem
 # Run V2Ray
 /usr/local/bin/xray -config /usr/local/etc/xray/config.json &
