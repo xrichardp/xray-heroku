@@ -16,13 +16,13 @@
       "required": false
     },
     "WS_PATH": {
-      "description": "websocket路径",
+      "description": "websocket路径，不要用nginx已占用的路径",
       "value": "/ray",
       "required": true
     }
   },
-  "website": "https://github.com/libsgh/v2ray-heroku",
-  "repository": "https://github.com/libsgh/v2ray-heroku",
+  "website": "https://github.com/libsgh/xray-heroku",
+  "repository": "https://github.com/libsgh/xray-heroku",
   "stack": "container",
   "features": [
     "runtime-dyno-metadata"
