@@ -2,7 +2,7 @@
 [![](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/libsgh/xray-heroku.git)
 
 ### heroku上部署v2ray
-- [x] 支持vmess和vless两种协议
+- [x] 支持vmess(0-RTT)和vless两种协议
 - [x] 支持自定义websocket路径
 - [x] 伪装首页（3D元素周期表）
 - [x] HTML5测速
@@ -11,10 +11,6 @@
 请求`/`，返回3D元素周期表
 
 ![image](https://cdn.jsdelivr.net/gh/libsgh/v2ray-heroku@main/doc/1.png)
-
-请求`/speedtest/`，html5-speedtest测速页面
-
-![image](https://cdn.jsdelivr.net/gh/libsgh/v2ray-heroku@main/doc/2.png)
 
 请求`/test/`，文件下载速度测试
 
