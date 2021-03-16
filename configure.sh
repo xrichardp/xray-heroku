@@ -11,7 +11,7 @@ install -m 755 /tmp/xray/xray /usr/local/bin/xray
 rm -rf /tmp/xray
 # V2Ray new configuration
 install -d /usr/local/etc/xray
-envsubst '\$UUID,\$WS_PATH' < $config_path > /usr/local/etc/xray/config.json
+envsubst '\$PORT,\$UUID,\$WS_PATH' < $config_path > /usr/local/etc/xray/config.json
 echo $FullChain > /opt/fullchain.pem
 echo $PrivateKey > /opt/privkey.pem
 # MK TEST FILES
