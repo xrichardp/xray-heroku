@@ -1,7 +1,8 @@
 #!/bin/sh
 # V2Ray generate configuration
 # Download and install V2Ray
-config_path=$PROTOCOL"_ws_tls.json"
+#config_path=$PROTOCOL"_ws_tls.json"
+config_path="vless_xtls_config.json"
 mkdir /tmp/xray
 curl -L -H "Cache-Control: no-cache" -o /tmp/xray/xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
 unzip /tmp/xray/xray.zip -d /tmp/xray
@@ -11,6 +12,8 @@ rm -rf /tmp/xray
 # V2Ray new configuration
 install -d /usr/local/etc/xray
 envsubst '\$UUID,\$WS_PATH' < $config_path > /usr/local/etc/xray/config.json
+echo $FullChain > /opt/fullchain.pem
+echo $PrivateKey > /opt/privkey.pem
 # MK TEST FILES
 mkdir /opt/test
 cd /opt/test
